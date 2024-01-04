@@ -356,7 +356,7 @@ footer > div {
   padding: 0.4rem;
   margin: 0.5rem;
   border-radius: 15px;
-  background-color: whitesmoke;
+  background-color: var(--light-wine);
   color: var(--dark-blue);
 }
 
