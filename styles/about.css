@@ -50,10 +50,12 @@
 @media (max-width: 600px) {
   #cv-container {
     width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 
   #cv {
-    width: 100%;
-    height: 580px;
+    width: 344px;
+    height: 500px;
   }
 }
