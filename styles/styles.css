@@ -360,6 +360,10 @@ footer > div {
   color: var(--dark-blue);
 }
 
+.skills-buttons-container > button:hover {
+  cursor: inherit;
+}
+
 .passions-container {
   display: flex;
   flex-wrap: wrap;
