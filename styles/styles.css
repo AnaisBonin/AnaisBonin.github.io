@@ -6,8 +6,8 @@
 /* GENERAL RULES */
 /*****************************************************/
 
-@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
   --light-wine: #ddcdd3;
@@ -26,7 +26,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inria Sans", sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   border: none;
 }
 
@@ -309,7 +309,7 @@ footer > div {
   padding: 1rem;
   width: 48%;
   height: 200px;
-  background-image: url("../assets/geometric2.jpg");
+  background-image: url('../assets/geometric2.jpg');
   background-size: cover;
 }
 
@@ -388,4 +388,10 @@ footer > div {
 .passion-icon > i {
   rotate: -45deg;
   font-size: 1.4rem;
+}
+
+.lorem {
+  display: block;
+  padding: 1rem 0;
+  color: var(--grey);
 }

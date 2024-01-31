@@ -21,6 +21,16 @@
   }
 }
 
+.contact-info {
+  margin-top: 1rem;
+}
+
+.contact-info > h3 {
+  color: var(--purple);
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
 /*************************************/
 
 .contact-form {
