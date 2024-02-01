@@ -34,7 +34,7 @@
 }
 
 .contact-info>h2 {
-  color: var(--pink);
+  color: var(--flash-pink);
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -47,7 +47,7 @@
 }
 
 .contact-info>p>a {
-  color: var(--purple);
+  color: var(--light-blue);
 }
 
 /*************************************/
@@ -58,7 +58,7 @@
 }
 
 .contact-form>h2 {
-  color: var(--pink);
+  color: var(--flash-pink);
   font-size: 2rem;
   text-transform: uppercase;
 }

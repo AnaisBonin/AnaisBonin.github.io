@@ -14,15 +14,15 @@
   gap: 2rem;
   width: 100%;
   font-size: 1.5rem;
-  color: var(--purple);
+  color: var(--light-blue);
 }
 
-.experiences-year-list > li {
+.experiences-year-list>li {
   margin: 0.2rem 0.5rem;
   transition: color 0.5s ease-out;
 }
 
-.experiences-year-list > li:hover {
+.experiences-year-list>li:hover {
   color: var(--pink);
 }
 
@@ -44,14 +44,14 @@
   margin: 2.5rem 0;
 }
 
-.experience-card > h2 {
+.experience-card>h2 {
   min-width: 130px;
   font-size: 60px;
 }
 
-.experience-card > p {
+.experience-card>p {
   padding-left: 2rem;
-  border-left: dotted var(--purple) 4px;
+  border-left: dotted var(--light-blue) 4px;
 }
 
 @media (max-width: 600px) {
@@ -60,12 +60,12 @@
     margin: 2rem 0;
   }
 
-  .experience-card > h2 {
+  .experience-card>h2 {
     text-align: center;
     font-size: 40px;
   }
 
-  .experience-card > p {
+  .experience-card>p {
     padding-left: 0rem;
     padding-top: 2rem;
     border-top: dotted var(--purple) 4px;
