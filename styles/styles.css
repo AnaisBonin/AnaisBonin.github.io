@@ -321,6 +321,12 @@ footer>div {
   background-size: cover;
 }
 
+.project-card>h2 {
+  padding: 0.15rem 0.6rem;
+  background-color: #04072e56;
+  border-radius: 13px;
+}
+
 /*****************************************************/
 
 .about-portrait {
@@ -338,9 +344,7 @@ footer>div {
 }
 
 .about-portrait>img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+  width: 300px;
 }
 
 .about-portrait>div {
@@ -397,7 +401,7 @@ footer>div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--purple);
+  background-color: var(--flash-pink);
   rotate: 45deg;
   margin: 1.5rem;
   min-width: 70px;
@@ -408,7 +412,7 @@ footer>div {
 
 .passion-icon:hover {
   background-color: var(--dark-blue);
-  color: var(--purple);
+  color: var(--flash-pink);
 }
 
 .passion-icon>i {
