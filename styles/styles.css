@@ -10,17 +10,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
-  --light-wine: #ddcdd3;
+  --light-wine: #ffdfeb;
   --pink: #ffafcc;
   --flash-pink: #f25dff;
-  --wine: #cb25e1;
-  --dark-wine: #841551;
-  --purple: #a491e5;
+  --wine: #fd60be;
+  --dark-wine: #a02165;
+  --purple: #b69ff0;
   --dark-blue: #0e0c76;
-  --blue: #2b40ba;
-  --light-blue: #4873fe;
-  --grey: #7271ad;
-  --dark: #04072e;
+  --blue: #4873fe;
+  --azul: #68ddfd;
+  --light-blue: #d9dcff;
+  --grey: #bdbcc8;
+  --dark: #030620;
 }
 
 * {
@@ -34,6 +35,8 @@
 body {
   position: relative;
   min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--light-blue);
 }
 
 main {
@@ -47,7 +50,7 @@ a {
 }
 
 strong {
-  color: var(--flash-pink);
+  color: var(--wine);
 }
 
 ul,
@@ -111,15 +114,16 @@ main>section>div {
 /* GENERAL CLASS */
 /*****************************************************/
 
-.blue {
-  background-color: var(--dark-blue);
-  color: whitesmoke;
+.color-band {
+  background: linear-gradient(145deg, #030622, #03051d);
+  box-shadow: 5px 1px 20px #5663f6,
+    -5px -1px 20px #ce89db;
 }
 
 .arrow-button {
   border-radius: 50%;
   padding: 0.5rem;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   color: whitesmoke;
   font-weight: bold;
 }
@@ -136,8 +140,9 @@ main>section>div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 70px;
-  color: var(--blue);
+  margin-bottom: 1rem;
+  height: 80px;
+  color: var(--purple);
   font-size: 1.2rem;
 }
 
@@ -146,11 +151,11 @@ main>section>div {
 }
 
 .header-menu>li:hover {
-  color: var(--purple);
+  color: var(--wine);
 }
 
 .logo-ab {
-  width: 50px;
+  width: 53px;
   border-radius: 50%;
 }
 
@@ -194,24 +199,26 @@ main>section>div {
 
 .page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 2rem 2rem 2rem;
+  margin: 2rem 0;
+  padding: 3rem 2.6rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .page-header>h1 {
   margin: 0 1rem;
-  width: 390px;
   text-align: center;
-  font-size: 65px;
-  color: var(--wine);
-}
-
-.page-header>img {
-  width: 200px;
+  font-size: 145px;
+  font-weight: bold;
+  color: #f3baff11;
+  background-image: url("../assets/tech_background-banner.png");
+  background-size: 140%;
+  background-position-y: -160px;
+  background-clip: text;
+  text-shadow: 1px 1px 2px rgba(255, 143, 249, 0.096), 0 0 1em rgba(0, 0, 255, 0.058), 0 0 0.1em rgba(114, 206, 255, 0.047);
 }
 
 @media (max-width: 600px) {
@@ -222,11 +229,7 @@ main>section>div {
   }
 
   .page-header>h1 {
-    font-size: 40px;
-  }
-
-  .page-header>img {
-    width: 150px;
+    font-size: 50px;
   }
 }
 
@@ -287,20 +290,22 @@ footer>div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   line-height: 1.6rem;
 }
 
 .about-header>h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
+  color: var(--purple);
+  text-shadow: var(--blue) 1px 1px 10px;
 }
 
 .project-card-container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding-top: 2rem;
   width: 100%;
 }
 
@@ -376,7 +381,7 @@ footer>div {
   min-width: 100%;
   min-height: 100%;
   padding: 0.5rem;
-  background-color: rgba(245, 245, 245, 0.844);
+  background-color: rgba(229, 238, 254, 0.907);
   color: var(--blue);
   text-align: center;
   font-size: 0.95rem;
@@ -394,6 +399,7 @@ footer>div {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 800px;
+  margin: 2rem 0;
   padding: 2rem 0;
 }
 
@@ -401,18 +407,19 @@ footer>div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--flash-pink);
+  background-color: var(--wine);
   rotate: 45deg;
   margin: 1.5rem;
   min-width: 70px;
   height: 70px;
   transition: all 0.5s linear;
   color: whitesmoke;
+  box-shadow: var(--pink) 1px 0px 5px;
 }
 
 .passion-icon:hover {
-  background-color: var(--dark-blue);
-  color: var(--flash-pink);
+  background-color: var(--azul);
+  color: var(--dark-blue);
 }
 
 .passion-icon>i {

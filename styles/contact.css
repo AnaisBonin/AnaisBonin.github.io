@@ -35,7 +35,7 @@
 }
 
 .contact-info>h2 {
-  color: var(--flash-pink);
+  color: var(--wine);
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -48,7 +48,7 @@
 }
 
 .contact-info>p>a {
-  color: var(--light-blue);
+  color: var(--azul);
 }
 
 /*************************************/
