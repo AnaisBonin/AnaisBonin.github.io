@@ -18,7 +18,7 @@
   --purple: #b69ff0;
   --dark-blue: #0e0c76;
   --blue: #4873fe;
-  --azul: #68ddfd;
+  --azul: #68ddfdc2;
   --light-blue: #d9dcff;
   --grey: #bdbcc8;
   --dark: #030620;
@@ -123,9 +123,14 @@ main>section>div {
 .arrow-button {
   border-radius: 50%;
   padding: 0.5rem;
-  background-color: var(--blue);
+  background-color: var(--wine);
   color: whitesmoke;
   font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+
+.arrow-button:hover {
+  background-color: var(--azul);
 }
 
 /*****************************************************/
@@ -174,7 +179,7 @@ main>section>div {
     margin-bottom: 1rem;
     max-width: 370px;
     height: 54px;
-    color: var(--blue);
+    color: var(--purple);
     overflow: hidden;
   }
 
@@ -188,6 +193,7 @@ main>section>div {
 
   .mobile-menu:hover {
     height: fit-content;
+    padding-bottom: 1rem;
   }
 
   .logo-ab {
@@ -213,15 +219,15 @@ main>section>div {
   text-align: center;
   font-size: 145px;
   font-weight: bold;
-  color: #f3baff11;
+  color: #e978ff35;
   background-image: url("../assets/tech_background-banner.png");
   background-size: 140%;
   background-position-y: -160px;
   background-clip: text;
-  text-shadow: 1px 1px 2px rgba(255, 143, 249, 0.096), 0 0 1em rgba(0, 0, 255, 0.058), 0 0 0.1em rgba(114, 206, 255, 0.047);
+  text-shadow: 8px 8px 2px rgba(85, 169, 205, 0.119);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .page-header {
     flex-direction: column;
     padding: 1rem;
@@ -291,11 +297,13 @@ footer>div {
   flex-direction: column;
   align-items: center;
   padding: 4rem 2rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
 }
 
 .about-header>h1 {
   font-size: 2.5rem;
+  line-height: 2.5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
   color: var(--purple);
@@ -303,7 +311,7 @@ footer>div {
 }
 
 .project-card-container {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding-top: 2rem;
   width: 100%;
@@ -340,6 +348,9 @@ footer>div {
   align-items: center;
   margin: 3rem 0;
   gap: 2rem;
+  color: var(--purple);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
 
 @media (max-width: 600px) {
@@ -349,7 +360,10 @@ footer>div {
 }
 
 .about-portrait>img {
-  width: 300px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .about-portrait>div {
@@ -369,9 +383,9 @@ footer>div {
 }
 
 .skills-buttons-container>div {
-  width: 160px;
-  margin: 0.5rem;
-  border: solid 1px var(--flash-pink);
+  width: 170px;
+  margin: 0.4rem;
+  border: solid 2px var(--flash-pink);
 }
 
 .skills-buttons-container>div>div {
@@ -381,17 +395,17 @@ footer>div {
   min-width: 100%;
   min-height: 100%;
   padding: 0.5rem;
-  background-color: rgba(229, 238, 254, 0.907);
-  color: var(--blue);
+  background-color: var(--azul);
+  color: var(--light-blue);
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
-  transition: color 0.6s ease-in-out;
+  transition: all 0.4s linear;
 }
 
 .skills-buttons-container>div>div:hover {
-  cursor: inherit;
-  color: var(--wine);
+  background-color: rgba(255, 12, 198, 0.451);
+  font-weight: bold;
 }
 
 .passions-container {
@@ -407,19 +421,21 @@ footer>div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--wine);
   rotate: 45deg;
   margin: 1.5rem;
   min-width: 70px;
   height: 70px;
+  background-color: var(--dark-blue);
+  color: var(--azul);
+  box-shadow: var(--azul) 2px -2px 5px;
   transition: all 0.5s linear;
-  color: whitesmoke;
-  box-shadow: var(--pink) 1px 0px 5px;
 }
 
 .passion-icon:hover {
-  background-color: var(--azul);
-  color: var(--dark-blue);
+  background-color: var(--dark-wine);
+  color: whitesmoke;
+  box-shadow: var(--pink) 5px -5px 6px;
+
 }
 
 .passion-icon>i {
@@ -430,5 +446,6 @@ footer>div {
 .lorem {
   display: block;
   padding: 1rem 0;
-  color: var(--grey);
+  font-style: italic;
+  color: rgba(162, 233, 255, 0.426);
 }
