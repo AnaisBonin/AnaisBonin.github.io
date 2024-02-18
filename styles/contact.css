@@ -3,6 +3,8 @@
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
+  color: var(--light-wine);
+  font-size: 1.1rem;
 }
 
 .contact-container>img {

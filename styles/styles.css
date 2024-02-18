@@ -16,6 +16,8 @@
   --wine: #fd60be;
   --dark-wine: #a02165;
   --purple: #b69ff0;
+  --orange: #ff821c;
+  --red: #fd1053;
   --dark-blue: #0e0c76;
   --blue: #4873fe;
   --azul: #68ddfdc2;
@@ -219,12 +221,13 @@ main>section>div {
   text-align: center;
   font-size: 145px;
   font-weight: bold;
-  color: #e978ff35;
-  background-image: url("../assets/tech_background-banner.png");
+  color: #e978ff00;
+  background-image: url("../assets/tech-swirls.jpg");
   background-size: 140%;
-  background-position-y: -160px;
+  background-position-y: -120px;
+  background-position-x: 60px;
   background-clip: text;
-  text-shadow: 8px 8px 2px rgba(85, 169, 205, 0.119);
+  text-shadow: 8px 8px 2px rgba(205, 85, 179, 0.041);
 }
 
 @media (max-width: 800px) {
@@ -360,7 +363,7 @@ footer>div {
 }
 
 .about-portrait>img {
-  border-radius: 50%;
+  border-radius: 49%;
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -385,7 +388,8 @@ footer>div {
 .skills-buttons-container>div {
   width: 170px;
   margin: 0.4rem;
-  border: solid 2px var(--flash-pink);
+  border: solid 2px var(--orange);
+  transition: all 0.4s linear;
 }
 
 .skills-buttons-container>div>div {
@@ -395,16 +399,20 @@ footer>div {
   min-width: 100%;
   min-height: 100%;
   padding: 0.5rem;
-  background-color: var(--azul);
-  color: var(--light-blue);
+  background-color: var(--purple);
+  color: var(--light-wine);
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.4s linear;
 }
 
+.skills-buttons-container>div:hover {
+  border: solid 2px var(--azul);
+}
+
 .skills-buttons-container>div>div:hover {
-  background-color: rgba(255, 12, 198, 0.451);
+  background-color: var(--red);
   font-weight: bold;
 }
 
@@ -425,16 +433,16 @@ footer>div {
   margin: 1.5rem;
   min-width: 70px;
   height: 70px;
-  background-color: var(--dark-blue);
-  color: var(--azul);
-  box-shadow: var(--azul) 2px -2px 5px;
+  background-color: var(--orange);
+  color: var(--light-pink);
+  box-shadow: var(--red) 2px -2px 5px;
   transition: all 0.5s linear;
 }
 
 .passion-icon:hover {
-  background-color: var(--dark-wine);
+  background-color: var(--flash-pink);
   color: whitesmoke;
-  box-shadow: var(--pink) 5px -5px 6px;
+  box-shadow: var(--azul) 5px -5px 6px;
 
 }
 

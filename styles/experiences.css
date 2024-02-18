@@ -14,7 +14,7 @@
   gap: 2rem;
   width: 100%;
   font-size: 1.5rem;
-  color: var(--azul);
+  color: var(--orange);
 }
 
 .experiences-year-list>li {
@@ -23,7 +23,7 @@
 }
 
 .experiences-year-list>li:hover {
-  color: var(--wine);
+  color: var(--red);
 }
 
 @media (max-width: 600px) {
