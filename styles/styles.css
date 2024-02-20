@@ -17,7 +17,7 @@
   --dark-wine: #a02165;
   --purple: #b69ff0;
   --orange: #ff821c;
-  --red: #fd1053;
+  --raspberry: #d81f73;
   --dark-blue: #0e0c76;
   --blue: #4873fe;
   --azul: #68ddfdc2;
@@ -124,8 +124,8 @@ main>section>div {
 
 .arrow-button {
   border-radius: 50%;
-  padding: 0.5rem;
-  background-color: var(--wine);
+  padding: 0.6rem;
+  background-color: var(--raspberry);
   color: whitesmoke;
   font-weight: bold;
   transition: all 0.3s ease-in;
@@ -133,6 +133,7 @@ main>section>div {
 
 .arrow-button:hover {
   background-color: var(--azul);
+  box-shadow: 0px 0px 10px var(--purple);
 }
 
 /*****************************************************/
@@ -388,7 +389,7 @@ footer>div {
 .skills-buttons-container>div {
   width: 170px;
   margin: 0.4rem;
-  border: solid 2px var(--orange);
+  border: solid 2px var(--raspberry);
   transition: all 0.4s linear;
 }
 
@@ -399,7 +400,7 @@ footer>div {
   min-width: 100%;
   min-height: 100%;
   padding: 0.5rem;
-  background-color: var(--purple);
+  background-color: var(--blue);
   color: var(--light-wine);
   text-align: center;
   font-size: 1rem;
@@ -412,7 +413,7 @@ footer>div {
 }
 
 .skills-buttons-container>div>div:hover {
-  background-color: var(--red);
+  background-color: var(--raspberry);
   font-weight: bold;
 }
 
@@ -433,16 +434,16 @@ footer>div {
   margin: 1.5rem;
   min-width: 70px;
   height: 70px;
-  background-color: var(--orange);
+  background-color: var(--raspberry);
   color: var(--light-pink);
-  box-shadow: var(--red) 2px -2px 5px;
+  box-shadow: var(--purple) 2px -2px 5px;
   transition: all 0.5s linear;
 }
 
 .passion-icon:hover {
-  background-color: var(--flash-pink);
+  background-color: var(--orange);
   color: whitesmoke;
-  box-shadow: var(--azul) 5px -5px 6px;
+  box-shadow: var(--raspberry) 6px -6px 6px;
 }
 
 .passion-icon>i {

@@ -23,7 +23,7 @@
 }
 
 .experiences-year-list>li:hover {
-  color: var(--red);
+  color: var(--raspberry);
 }
 
 @media screen and (max-width: 600px) {
