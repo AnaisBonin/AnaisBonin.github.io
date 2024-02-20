@@ -17,7 +17,8 @@
   flex-direction: row-reverse;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+
   .passion-card,
   .reverse {
     flex-direction: column;

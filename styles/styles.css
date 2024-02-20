@@ -102,9 +102,9 @@ main>section>div {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   main>section>div {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 }
 
@@ -166,7 +166,7 @@ main>section>div {
   border-radius: 50%;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .header-menu {
     display: none;
     visibility: hidden;
@@ -227,10 +227,10 @@ main>section>div {
   background-position-y: -120px;
   background-position-x: 60px;
   background-clip: text;
-  text-shadow: 8px 8px 2px rgba(205, 85, 179, 0.041);
+  text-shadow: 4px 4px 1px rgba(127, 93, 228, 0.3);
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .page-header {
     flex-direction: column;
     padding: 1rem;
@@ -320,7 +320,7 @@ footer>div {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .project-card-container {
     display: none;
   }
@@ -356,7 +356,7 @@ footer>div {
   line-height: 1.8rem;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .about-portrait {
     flex-direction: column;
   }
@@ -443,17 +443,9 @@ footer>div {
   background-color: var(--flash-pink);
   color: whitesmoke;
   box-shadow: var(--azul) 5px -5px 6px;
-
 }
 
 .passion-icon>i {
   rotate: -45deg;
   font-size: 1.4rem;
-}
-
-.lorem {
-  display: block;
-  padding: 1rem 0;
-  font-style: italic;
-  color: rgba(162, 233, 255, 0.426);
 }

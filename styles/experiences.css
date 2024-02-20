@@ -26,7 +26,7 @@
   color: var(--red);
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .experiences-year-list {
     margin-top: 1rem;
     max-width: 350px;
@@ -55,7 +55,7 @@
   border-left: dotted var(--azul) 4px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .experience-card {
     flex-direction: column;
     margin: 2rem 0;
