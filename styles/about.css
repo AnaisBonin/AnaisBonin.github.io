@@ -48,6 +48,10 @@
   height: 1150px;
 }
 
+#human-talks {
+margin-top: 4rem;
+}
+
 @media screen and (max-width: 600px) {
   #cv-container {
     display: flex;
